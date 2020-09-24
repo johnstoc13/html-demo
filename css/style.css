@@ -14,13 +14,22 @@
     max-height: 100px;
 }
 
-a.nav-link {
+a.nav-link,
+h2 {
     font-family: 'FVAlmeloRegular'!important;
     font-weight: normal;
     font-style: normal;
-    font-size: large;
     color: #1bcedf;
+}
+
+.navstyle {
     letter-spacing: 1px;
+    font-size: large;
+}
+
+.h2style {
+    font-size: 48px;
+    letter-spacing: 2px;
 }
 
 .text-hover {
