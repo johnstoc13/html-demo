@@ -14,17 +14,16 @@
     max-height: 100px;
 }
 
-a.nav-link,
-h2 {
+* {
     font-family: 'FVAlmeloRegular'!important;
     font-weight: normal;
     font-style: normal;
-    color: #1bcedf;
 }
 
 .navstyle {
     letter-spacing: 1px;
     font-size: large;
+    color: #1bcedf;
 }
 
 .h2style {
@@ -32,7 +31,12 @@ h2 {
     letter-spacing: 2px;
 }
 
-.text-hover {
+.h3style {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.current-nav {
     color: #5b247a!important;
 }
 
@@ -43,4 +47,8 @@ a.nav-link:hover {
 .border-left,
 .border-right {
     border-color: #1bcedf!important;
+}
+
+.bg-lt-blue {
+    background-color: #1bcedf;
 }
