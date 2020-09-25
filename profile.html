@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/87498dd281.js" crossorigin="anonymous"></script>
+    <title>Profile Page</title>
 </head>
 
 <body>
@@ -15,18 +16,19 @@
     <!-- Navbar -->
     <nav class="container-fluid bg-white border-bottom border-dark">
         <div class="row align-items-center">
-            <div class="col-md-6 mt-sm-2 mt-md-0 d-flex justify-content-center">
-                <img src="./images/mainlogo.png" alt="Team Builders" class="logoimg"/>
+            <div class="col"></div>
+            <div class="col-md-5 d-flex justify-content-md-start justify-content-center">
+                <img src="./images/mainlogo.png" alt="Team Builders" class="logoimg" />
                 <!-- <span class="h1 mb-0 text-white">TEAM BUILDERS</span> -->
             </div>
-            <div class="col-md-6 my-md-2">
+            <div class="col-md-6 mb-2 mb-md-0 mr-md-2">
                 <ul class="navbar-nav flex-row justify-content-md-end justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link px-2 mx-2 current-nav navstyle" href="profile.html">Profile<span class="sr-only">(current)</span></a>
+                        <a class="nav-link px-2 mx-2 current-nav navstyle" href="profile.html">Profile<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3 py-0 mt-2 border-left border-right navstyle"
-                            href="game.html">Game</a>
+                        <a class="nav-link px-3 py-0 mt-2 border-left border-right navstyle" href="game.html">Game</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-2 mx-2 navstyle" href="#">Logout</a>
@@ -36,34 +38,105 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Welcome Message -->
     <section class="container-fluid bg-lt-blue py-5">
         <div class="row py-3 py-md-4">
             <div class="col">
-                <h3 class="text-white text-center h3style">Welcome to your profile, {{user.displayName}}!</h3>
+                <h2 class="text-white text-center h2style">Welcome to your profile, <span class="text-purple">Chase
+                        Johnston!</span></h2>
             </div>
         </div>
-    </section>  
+    </section>
 
-    
-    <div class="container">
-        <h1>{{user.displayName}}</h1>
-        <div class="card" style="width: 18rem;">
-            <img src={{user.picture}} class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{user.email}}</h5>
-                <p class="card-text">Profile information can be loaded here.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- Profile Content -->
+    <section class="container-fluid bg-light">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-3 mt-3 d-flex flex-column justify-content-center text-center">
+                <div>
+                    <h3>Chase Johnston</h3>
+                </div>
+                <div class="card border border-purple mx-auto">
+                    <img src="./images/profilepic.jpeg" class="card-img-top" alt="Profile Picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Email: chasej@live.com</h5>
+                        <p class="card-text">Profile information can be loaded here.</p>
+                        <a href="#" class="btn bg-purple text-white btn-text px-4">Update Profile</a>
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-8">
+                <div class="container bg-white mt-lg-n5 mt-4 mt-lg-0 pt-3 border border-purple">
+                    <h3 class="text-center">Please update your profile questionnaire!</h3>
+                    <form>
+                        <div class="form-group row">
+                            <label for="input" class="col-sm-9 col-form-label">What is one hidden talent that you have?</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="talent">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input" class="col-sm-9 col-form-label">What is your biggest pet peeve?</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="peeve">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input" class="col-sm-9 col-form-label">What is the weirdest food you've ever eaten?</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="food">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input" class="col-sm-9 col-form-label">What is your most favorite vehicle make and model?</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="vehicle">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input" class="col-sm-9 col-form-label">What tv show are you currently watching?</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="tvshow">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input" class="col-sm-9 col-form-label">Which famous person would you take with you to a desert island?</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="island">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input" class="col-sm-9 col-form-label">What book are you currently reading?</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="book">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row justify-content-center pb-3">
+                        <a href="#" class="btn bg-purple text-white btn-text px-4">Update Questionnaire</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
         </div>
-    </div>
-    
-    <div class="container mt-4">
-        <h2>User Profile Object</h2>
-        <p>{{user.userProfile}}</p>
-        <p>{{user.name}}</p>
-    </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer-margin bg-light">
+        <div class="navbar fixed-bottom navbar-dark bg-purple justify-content-center">
+            <span class="navbar-brand footer-font blue align-middle">Copyright &copy;2020
+                &ThickSpace;|&ThickSpace;
+                Team Builders</span>
+            <span>
+                <a class="fab fa-github fa-2x lt-blue" href="https://github.com/hilbug/the-team-builders" target="_blank"></a>
+                &ThickSpace;
+                <!-- <a class="fab fa-linkedin fa-lg lt-blue" href="https://www.linkedin.com/in/chase-johnston8"
+                    target="_blank"></a>
+                &ThickSpace;
+                <a class="fas fa-envelope fa-lg lt-blue" href="mailto:chasej@live.com" target="_blank"></a> -->
+            </span>
+        </div>
+    </footer>
 
 </body>
 

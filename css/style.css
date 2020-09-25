@@ -14,10 +14,14 @@
     max-height: 100px;
 }
 
-* {
+h2,
+.nav-link,
+.navbar-brand,
+.btn-text {
     font-family: 'FVAlmeloRegular'!important;
     font-weight: normal;
     font-style: normal;
+    letter-spacing: 1px;
 }
 
 .navstyle {
@@ -40,8 +44,17 @@
     color: #5b247a!important;
 }
 
-a.nav-link:hover {
+a.nav-link:hover,
+.text-purple {
     color: #5b247a;
+}
+
+.lt-blue {
+    color: #1bcedf;
+}
+
+.border-purple {
+    border-color: #5b247a!important;
 }
 
 .border-left,
@@ -52,6 +65,11 @@ a.nav-link:hover {
 .bg-lt-blue {
     background-color: #1bcedf;
 }
+
+.bg-purple {
+    background-color: #5b247a;
+}
+
 .game-board-back {
     display: flex;
     max-width: 960px;
@@ -115,4 +133,19 @@ a.nav-link:hover {
     width: 150px;
 }
 
+.footer-font {
+    font-size: 15px;
+}
 
+.footer-margin {
+    height: 75px;
+}
+
+.fas:hover,
+.fab:hover {
+    color: #ffffff;
+}
+
+.card {
+    max-width: 400px;
+}
