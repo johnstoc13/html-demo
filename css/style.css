@@ -55,7 +55,7 @@ a.nav-link:hover {
 .game-board-back {
     display: flex;
     max-width: 960px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     flex-wrap: wrap;
     /* flex-direction: column; */
     display: flex;
@@ -66,15 +66,19 @@ a.nav-link:hover {
 .game-card-back {
     display: flex;
     border-radius: 10px;
+    border-style: solid;
+    border-width: .2em;
+    border-color: #5b247a;
     margin: 10px;
-    background: repeating-linear-gradient(
+    background-color: #1bcedf;
+    /* background: repeating-linear-gradient(
     45deg,
      #1bcedf,
      #5b247a 5px,
      #1bcedf 5px,
      #5b247a 10px
-    );
-    opacity: 70%;
+    ); */
+    opacity: 40%;
     /* background-color: #5b247a; */
     background-size: contain;
     background-repeat: no-repeat;
