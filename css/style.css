@@ -52,3 +52,63 @@ a.nav-link:hover {
 .bg-lt-blue {
     background-color: #1bcedf;
 }
+.game-board-back {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.game-card-back {
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+    background: repeating-linear-gradient(
+    45deg,
+     #1bcedf,
+     #5b247a 5px,
+     #1bcedf 5px,
+     #5b247a 10px
+    );
+    opacity: 70%;
+    /* background-color: #5b247a; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: 150px;
+}
+
+.game-board-front {
+    display: none;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.game-card-front {
+    display: none;
+    border-radius: 10px;
+    border-style: double;
+    border-width: .3em;
+    border-color: #5b247a;
+    margin:10px;
+    background-color: rgba(27,206,223,0.1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+}
+
+
