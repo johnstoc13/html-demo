@@ -27,7 +27,7 @@ h2,
 .navstyle {
     letter-spacing: 1px;
     font-size: large;
-    color: #1bcedf;
+    color: rgba(50,150,190,1);
 }
 
 .h2style {
@@ -50,7 +50,7 @@ a.nav-link:hover,
 }
 
 .lt-blue {
-    color: #1bcedf;
+    color: rgba(50,150,190,1);
 }
 
 .border-purple {
@@ -59,11 +59,11 @@ a.nav-link:hover,
 
 .border-left,
 .border-right {
-    border-color: #1bcedf!important;
+    border-color: rgba(50,150,190,1)!important;
 }
 
 .bg-lt-blue {
-    background-color: #1bcedf;
+    background-color: rgba(50,150,190,1);
 }
 
 .bg-purple {
@@ -148,4 +148,18 @@ a.nav-link:hover,
 
 .card {
     max-width: 400px;
+}
+
+.btn-size {
+    max-height: 50px;
+}
+
+.btn-width {
+   width: 250px;
+   letter-spacing: 2px;
+   font-size: 20px;
+}
+
+.bg-new {
+    background-color: rgba(50,150,190,1)
 }

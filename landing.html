@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/87498dd281.js" crossorigin="anonymous"></script>
+    <title>Profile Page</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="container-fluid bg-white border-bottom border-dark">
+        <div class="row align-items-center">
+            <div class="col"></div>
+            <div class="col-md-5 d-flex justify-content-md-start justify-content-center">
+                <img src="./images/mainlogo.png" alt="Team Builders" class="logoimg" />
+            </div>
+            <div class="col-md-6 mb-2 mb-md-0 mr-md-2">
+                <ul class="navbar-nav flex-row justify-content-md-end justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 mx-2 current-nav navstyle" href="landing.html">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-0 mt-2 border-left navstyle" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-0 mt-2 border-left border-right navstyle" href="game.html">Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 mx-2 navstyle" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Message -->
+    <section class="container-fluid bg-new py-5">
+        <div class="row py-3 py-md-4">
+            <div class="col">
+                <h2 class="text-white text-center h2style">Welcome to Team Builders, <span class="text-purple">Chase
+                        Johnston!</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="container-fluid bg-light">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-3 mt-3 d-flex flex-column justify-content-center text-center">
+                <div class="card border border-purple mx-auto">
+                    <img src="./images/profilepic.jpeg" class="card-img-top" alt="Profile Picture">
+                    <div class="card-body">
+                        <h4 class="card-title">Chase Johnston</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">aka Chase</h6>
+                        <p class="card-text">Email: chasej@live.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="container bg-white mt-lg-n5 mt-4 mt-lg-0 pt-3 border border-purple">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 class="text-center mb-4 text-purple">About Me</h2>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Hidden Talent</th>
+                                        <td>Pilot</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Pet Peeve</th>
+                                        <td>Liars</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Weirdest Food Eaten</th>
+                                        <td>Escargot</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Favorite Vehicle</th>
+                                        <td>'68 Chevy Camaro</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Current TV Show</th>
+                                        <td>Ozark</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Famous Person</th>
+                                        <td>Harrison Ford</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Current Book</th>
+                                        <td>Jurassic Park</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container d-flex flex-column align-items-center col-6">
+                            <h2 class="text-center mb-4 text-purple">Get Building</h2>
+                            <a href="./profile.html" class="btn bg-lt-blue text-white btn-text btn-width py-3 mt-2 mb-3 px-4">Update Profile</a>
+                            <a href="#" class="btn bg-lt-blue text-white btn-text px-4 py-3 btn-width mb-3">View Teams</a>
+                            <a href="#" class="btn bg-lt-blue text-white btn-text px-4 py-3 btn-width mb-3">Build My
+                                Team</a>
+                            <a href="./game.html" class="btn bg-lt-blue text-white btn-text px-4 py-3 btn-width">Start A
+                                Game</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-around bg-new py-3 mt-4 text-white">
+                    <div class="h3">CURRENT TEAM:</div>
+                    <div class="h3">Team Builders</div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-margin bg-light">
+        <div class="navbar fixed-bottom navbar-dark bg-purple justify-content-center">
+            <span class="navbar-brand footer-font blue align-middle">Copyright &copy;2020
+                &ThickSpace;|&ThickSpace;
+                Team Builders</span>
+            <span>
+                <a class="fab fa-github fa-2x lt-blue" href="https://github.com/hilbug/the-team-builders"
+                    target="_blank"></a>
+                &ThickSpace;
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
