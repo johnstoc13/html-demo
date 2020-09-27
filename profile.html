@@ -19,13 +19,15 @@
             <div class="col"></div>
             <div class="col-md-5 d-flex justify-content-md-start justify-content-center">
                 <img src="./images/mainlogo.png" alt="Team Builders" class="logoimg" />
-                <!-- <span class="h1 mb-0 text-white">TEAM BUILDERS</span> -->
             </div>
             <div class="col-md-6 mb-2 mb-md-0 mr-md-2">
                 <ul class="navbar-nav flex-row justify-content-md-end justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link px-2 mx-2 current-nav navstyle" href="profile.html">Profile<span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link px-3 py-0 mt-2 navstyle" href="landing.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-0 mt-2 border-left current-nav navstyle"
+                            href="profile.html">Profile<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-3 py-0 mt-2 border-left border-right navstyle" href="game.html">Game</a>
@@ -42,7 +44,7 @@
     <section class="container-fluid bg-lt-blue py-5">
         <div class="row py-3 py-md-4">
             <div class="col">
-                <h2 class="text-white text-center h2style">Welcome to your profile, <span class="text-purple">Chase
+                <h2 class="text-white text-center h2style">Update your profile, <span class="text-purple">Chase
                         Johnston!</span></h2>
             </div>
         </div>
@@ -53,24 +55,33 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-lg-3 mt-3 d-flex flex-column justify-content-center text-center">
-                <div>
-                    <h3>Chase Johnston</h3>
-                </div>
                 <div class="card border border-purple mx-auto">
                     <img src="./images/profilepic.jpeg" class="card-img-top" alt="Profile Picture">
                     <div class="card-body">
-                        <h5 class="card-title">Email: chasej@live.com</h5>
-                        <p class="card-text">Profile information can be loaded here.</p>
-                        <a href="#" class="btn bg-purple text-white btn-text px-4">Update Profile</a>
+                        <h5 class="card-title">Chase Johnston</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">aka Chase</h6>
+                        <p class="card-text">Email: chasej@live.com</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-8">
                 <div class="container bg-white mt-lg-n5 mt-4 mt-lg-0 pt-3 border border-purple">
-                    <h3 class="text-center">Please update your profile questionnaire!</h3>
+                    <h3 class="text-center mb-4">Please update your information here!</h3>
                     <form>
                         <div class="form-group row">
-                            <label for="input" class="col-sm-9 col-form-label">What is one hidden talent that you have?</label>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" id="firstName">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" id="lastName">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nickname" id="nickname">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input" class="col-sm-9 col-form-label">What is one hidden talent that you
+                                have?</label>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" id="talent">
                             </div>
@@ -82,38 +93,52 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="input" class="col-sm-9 col-form-label">What is the weirdest food you've ever eaten?</label>
+                            <label for="input" class="col-sm-9 col-form-label">What is the weirdest food you've ever
+                                eaten?</label>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" id="food">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="input" class="col-sm-9 col-form-label">What is your most favorite vehicle make and model?</label>
+                            <label for="input" class="col-sm-9 col-form-label">What is your most favorite vehicle make
+                                and model?</label>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" id="vehicle">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="input" class="col-sm-9 col-form-label">What tv show are you currently watching?</label>
+                            <label for="input" class="col-sm-9 col-form-label">What tv show are you currently
+                                watching?</label>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" id="tvshow">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="input" class="col-sm-9 col-form-label">Which famous person would you take with you to a desert island?</label>
+                            <label for="input" class="col-sm-9 col-form-label">Which famous person would you take with
+                                you to a desert island?</label>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" id="island">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="input" class="col-sm-9 col-form-label">What book are you currently reading?</label>
+                            <label for="input" class="col-sm-9 col-form-label">What book are you currently
+                                reading?</label>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" id="book">
                             </div>
                         </div>
+                        <div class="form-inline row col-md-4">
+                            <label class="mr-3" for="inputTeam">Your Team</label>
+                            <select id="inputTeam" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Team 1</option>
+                                <option>Team 2</option>
+                                <option>Team 3</option>
+                            </select>
+                        </div>
                     </form>
                     <div class="row justify-content-center pb-3">
-                        <a href="#" class="btn bg-purple text-white btn-text px-4">Update Questionnaire</a>
+                        <a href="./landing.html" class="btn bg-lt-blue text-white btn-text px-4">Update Profile</a>
                     </div>
                 </div>
             </div>
@@ -128,12 +153,9 @@
                 &ThickSpace;|&ThickSpace;
                 Team Builders</span>
             <span>
-                <a class="fab fa-github fa-2x lt-blue" href="https://github.com/hilbug/the-team-builders" target="_blank"></a>
-                &ThickSpace;
-                <!-- <a class="fab fa-linkedin fa-lg lt-blue" href="https://www.linkedin.com/in/chase-johnston8"
+                <a class="fab fa-github fa-2x lt-blue" href="https://github.com/hilbug/the-team-builders"
                     target="_blank"></a>
                 &ThickSpace;
-                <a class="fas fa-envelope fa-lg lt-blue" href="mailto:chasej@live.com" target="_blank"></a> -->
             </span>
         </div>
     </footer>
